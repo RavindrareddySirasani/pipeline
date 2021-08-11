@@ -2,19 +2,29 @@ pipeline{
   agent any
     stages{
       stage('Download'){
-        echo "continuous download"
+        steps{
+          echo "continuous download"
+        }
       }
       stage('Build'){
-      echo "continuous build"
+        steps{
+          echo "continuous build"
+        }
       }
       stage('Test'){
-      echo "continuous test"
+        steps{
+          echo "continuous test"
+        }
       }
       stage('Deploy'){
-      echo "continuous deploy"
+        steps{
+          echo "continuous deploy"
+        }
       }
       stage('Delivery'){
-      echo "continuous delivery"
+        steps{
+          echo "continuous delivery"
+        }
        }
     }
 }
